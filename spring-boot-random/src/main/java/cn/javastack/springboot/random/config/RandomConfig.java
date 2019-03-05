@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 微信公众号：Java技术栈
+ * Spring Boot读取配置的集中方式
+ * @ConfigurationProperties注解读取方式
  */
 @Component
 @ConfigurationProperties(prefix = "user.random")
@@ -20,5 +22,6 @@ public class RandomConfig {
     private int range;
     private long longNumber;
     private String uuid;
+    private String string;
 
 }

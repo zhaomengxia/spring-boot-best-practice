@@ -56,22 +56,27 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
+        <!--添加了Spring Boot基础依赖后，如果使用web mvc功能，只需要添加下面这个spring-boot-starter-web即可，spring boot会自动装配web功能-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
     </dependencies>
-
+   <!--添加编译打包插件-->
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
-
-
 </project>

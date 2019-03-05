@@ -28,9 +28,9 @@ public class Application {
     @ResponseBody
     public boolean sendEmail() {
         SimpleMailMessage msg = new SimpleMailMessage();
-        msg.setFrom("admin@javastack.cn");
+        msg.setFrom("zhaomengxia@vortexinfo.cn");
         msg.setBcc();
-        msg.setTo("admin@javastack.cn");
+        msg.setTo("zhaomengxia@vortexinfo.cn");
         msg.setSubject("Java技术栈投稿");
         msg.setText("技术分享");
         try {

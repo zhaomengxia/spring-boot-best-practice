@@ -38,3 +38,8 @@ spring:
 
 mq:
   address: localhost
+
+info:
+  address1: USA
+  company: Spring
+  degree: high

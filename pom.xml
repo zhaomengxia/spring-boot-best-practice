@@ -19,6 +19,10 @@
         <module>spring-boot-auto-configure</module>
         <module>spring-boot-banner</module>
         <module>spring-boot-test</module>
+        <module>springcloud-helloworld-eureka-client</module>
+        <module>springcloud-helloworld-eureka-server</module>
+        <module>spring-boot-starter-data-jpa</module>
+        <module>util-jpa</module>
     </modules>
     <packaging>pom</packaging>
 

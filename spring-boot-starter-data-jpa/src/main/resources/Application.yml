@@ -1,0 +1,15 @@
+server:
+  port: 10008
+
+spring.datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/homework?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true&serverTimezone=CTT
+    username: root
+    password: root
+spring.jpa:
+    show-sql: true
+    database: MYSQL
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+        ddl-auto: update
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy

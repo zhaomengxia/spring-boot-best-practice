@@ -22,7 +22,7 @@
         <module>springcloud-helloworld-eureka-client</module>
         <module>springcloud-helloworld-eureka-server</module>
         <module>spring-boot-starter-data-jpa</module>
-        <module>util-jpa</module>
+        <module>spring-boot-mybatisplus</module>
     </modules>
     <packaging>pom</packaging>
 

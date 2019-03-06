@@ -1,15 +1,11 @@
-server:
-  port: 10008
-
-spring.datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost/homework?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=utf8&useSSL=false&autoReconnect=true&serverTimezone=CTT
-    username: root
-    password: root
-spring.jpa:
-    show-sql: true
-    database: MYSQL
-    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-    hibernate:
-        ddl-auto: update
-        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+spring:
+  profiles:
+    active: dev
+    #指定项目静态资源路径
+  resources:
+    static-locations: /META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${file.upload-path}
+      #session 相关配置
+  session:
+    timeout: 3600
+    redis:
+      namespace: springboot-session
